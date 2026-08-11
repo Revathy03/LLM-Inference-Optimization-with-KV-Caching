@@ -1,0 +1,27 @@
+Model.py
+
+GPT class is derived from pytorch nn module
+default fn on nn module is forward function for forward pass
+Another function GPT class have generate fn - auto regressive decoding
+    it feeds the input prompt to the model, generates one token of output at a time, and feeds it back as input to the model to get the next token. 
+set flash=false to disable optimized version and use simpler and slower version
+Find a way to measure the time taken for inference
+Find a way to measure memory usage - kaggle dashboard
+Plot inference time vs size of input prompt and inference time per output token vs size of input prompt
+Plot inference time vs size of output prompt and inference time per output token vs size of output prompt
+What can you conclude about how the overheads of inference change with increasing input and output lengths from these experiments?
+
+
+sample.py
+
+PART 2
+UPDATE GENERATE FUNCTION, SO THAT IT CAN RETUEN compued kv cache, within the loop
+Pass only the latest generated token, accumulate the kv cache value, return those to the generation loop, use it in the next iteration
+Each block should accept precvious kv cache and return the updated kv cache
+First forward pass does not have a cache
+Modify attention mechanism to reuse past key values
+New qvk should be computed only for the latest tokan not for the entire tokens
+kv should be appended to the kv cache before computing attention
+Mask used in attention should not be square
+kv values should be returned along with calculated attention matrix
+
