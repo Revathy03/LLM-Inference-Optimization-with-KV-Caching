@@ -1,0 +1,24 @@
+test_autocast_precision_change_invalidates_prefix (test_kv_cache.CacheCorrectnessTests.test_autocast_precision_change_invalidates_prefix) ... ok
+test_bad_cache_and_empty_inputs (test_kv_cache.CacheCorrectnessTests.test_bad_cache_and_empty_inputs) ... ok
+test_benchmark_reports_all_modes_and_output_parity (test_kv_cache.CacheCorrectnessTests.test_benchmark_reports_all_modes_and_output_parity) ... ok
+test_cache_invalidation_after_weight_or_model_change (test_kv_cache.CacheCorrectnessTests.test_cache_invalidation_after_weight_or_model_change) ... ok
+test_cached_and_uncached_greedy_outputs_match (test_kv_cache.CacheCorrectnessTests.test_cached_and_uncached_greedy_outputs_match) ... ok
+test_context_boundaries (test_kv_cache.CacheCorrectnessTests.test_context_boundaries) ... ok
+test_every_python_file_parses (test_kv_cache.CacheCorrectnessTests.test_every_python_file_parses) ... ok
+test_generation_can_continue_from_returned_cache (test_kv_cache.CacheCorrectnessTests.test_generation_can_continue_from_returned_cache) ... ok
+test_huggingface_weight_loading_and_logits (test_kv_cache.CacheCorrectnessTests.test_huggingface_weight_loading_and_logits) ... ok
+test_input_cache_is_not_mutated (test_kv_cache.CacheCorrectnessTests.test_input_cache_is_not_mutated) ... ok
+test_position_ids_are_offset_and_validated (test_kv_cache.CacheCorrectnessTests.test_position_ids_are_offset_and_validated) ... ok
+test_prefix_cache_budget (test_kv_cache.CacheCorrectnessTests.test_prefix_cache_budget) ... ok
+test_prefix_cache_does_not_grow_on_exact_repeat (test_kv_cache.CacheCorrectnessTests.test_prefix_cache_does_not_grow_on_exact_repeat) ... ok
+test_prefix_requires_eval_and_batch_one (test_kv_cache.CacheCorrectnessTests.test_prefix_requires_eval_and_batch_one) ... ok
+test_prefix_reuse_exact_partial_shorter_and_extensions (test_kv_cache.CacheCorrectnessTests.test_prefix_reuse_exact_partial_shorter_and_extensions) ... ok
+test_radix_splits_and_randomized_longest_prefixes (test_kv_cache.CacheCorrectnessTests.test_radix_splits_and_randomized_longest_prefixes) ... ok
+test_token_and_chunk_decoding_match_full_context (test_kv_cache.CacheCorrectnessTests.test_token_and_chunk_decoding_match_full_context) ... ok
+test_uncached_training_visits_transformer_blocks (test_kv_cache.CacheCorrectnessTests.test_uncached_training_visits_transformer_blocks) ... ok
+test_zero_tokens_and_invalid_sampling (test_kv_cache.CacheCorrectnessTests.test_zero_tokens_and_invalid_sampling) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 5.003s
+
+OK

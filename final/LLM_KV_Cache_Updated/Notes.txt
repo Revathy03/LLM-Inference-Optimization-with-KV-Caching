@@ -1,0 +1,3 @@
+Start with README.md. The root modules are the canonical corrected implementation.
+The old entry points delegate to the root CLI; keep the complete folder together.
+For source edits, update root model.py and mirror it into the two legacy directories.
